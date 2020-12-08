@@ -11,6 +11,17 @@ nav {
     position: relative;
     justify-content: center;
 }
+nav a {
+    padding: 16px;
+    color: lightgrey;
+    text-decoration: none;
+    vertical-align: center;
+}
+nav a:hover {
+    background-color: #303030;
+    color: #DDDDDD;
+    vertical-align: center;
+}
 
 h1 {
     color: white;
@@ -41,7 +52,7 @@ header {
     color: white;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -49,7 +60,7 @@ ul {
     align-items: center;
 }
 
-li {
+nav li {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
@@ -60,8 +71,56 @@ div {
     margin: auto;
 }
 
+
+.main {
+    color: darkslategrey;
+    font-family: sans-serif;
+    margin: 16px 5%;
+    width: 90%;
+}
+.main a {
+    text-decoration: none;
+}
+.main a:link {
+    color: blue;
+}
+.main a:visited {
+    color: blue;
+}
+.main a:hover {
+    color: cadetblue;
+}
+
 section {
     display: flex;
+}
+
+.dashboard section {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 300px;
+}
+.dashboard section ul {
+    list-style-type: none;
+}
+.dashboard section li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.transactions section {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 300px;
+}
+.transactions section ul {
+    list-style-type: none;
+}
+.transactions section li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Add a black background color to the top navigation bar */
@@ -104,4 +163,12 @@ section {
     border: none;
     margin: 15px;
     font-size: 18px;
+}
+
+footer {
+  background-color: black;
+  color: lightgrey;
+  padding: 16px;
+  height: 50px;
+  width: 100%;
 }
